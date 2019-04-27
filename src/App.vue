@@ -1,0 +1,63 @@
+<template>
+  <div id="app">
+    <el-container>
+
+      <!--顶部-->
+      <el-header>
+        <el-menu
+          default-active="/"
+          class="el-menu-demo"
+          mode="horizontal"
+          @select="handleSelect"
+          background-color="#545c64"
+          text-color="#fff"
+          active-text-color="#ffd04b"
+          :router="true">
+          <el-menu-item index="/">首页</el-menu-item>
+          <el-menu-item index="/serve">服务</el-menu-item>
+          <el-menu-item index="/about">关于我们</el-menu-item>
+        </el-menu>
+      </el-header>
+
+      <!--中间部分，不要动代码，自动根据导航切换-->
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+
+      <!--底部内容，这里要改-->
+      <el-footer>
+        This is footer
+      </el-footer>
+    </el-container>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App',
+  data(){
+    return {
+      //这里写变量
+    }
+  },
+  methods:{
+    //这里写函数/方法
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
+  }
+}
+</script>
+
+<style lang="stylus" rel="stylesheet/stylus">
+  .app
+    margin:0
+    padding:0
+    width: 100%
+    height: 100%
+    .page-container
+      margin:0
+      padding:0
+      width: 100%
+      height: 100%
+</style>

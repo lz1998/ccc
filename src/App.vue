@@ -14,8 +14,9 @@
           active-text-color="#ffd04b"
           :router="true">
           <el-menu-item index="/">首页</el-menu-item>
-          <el-menu-item index="/serve">服务</el-menu-item>
-          <el-menu-item index="/about">关于我们</el-menu-item>
+          <el-menu-item index="/serve">定制方案</el-menu-item>
+          <el-menu-item index="/about">产品导航</el-menu-item>
+          <el-menu-item index="/contact">联系我们</el-menu-item>
         </el-menu>
       </el-header>
 

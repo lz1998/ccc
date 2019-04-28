@@ -15,21 +15,21 @@
         <h3>特点</h3>
         <img src="https://www.baidu.com/img/bd_logo1.png"/>
         <div class="description">
-          <p>文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 </p>
+          <p>产品服务</p>
         </div>
       </el-col>
       <el-col :span="8">
         <h3>创新</h3>
         <img src="https://www.baidu.com/img/bd_logo1.png"/>
         <div class="description">
-          <p>文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 </p>
+          <p>现在开始</p>
         </div>
       </el-col>
       <el-col :span="8">
         <h3>优势</h3>
         <img src="https://www.baidu.com/img/bd_logo1.png"/>
         <div class="description">
-          <p>文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 文字介绍 </p>
+          <p>关于我们</p>
         </div>
 
       </el-col>
@@ -43,20 +43,29 @@
     data(){
       return{
         pics:[
-          require("./home1.jpg"),
-          require("./home2.jpg"),
-          require("./home3.jpg"),
+          require("./header1.jpg"),
+          require("./header2.jpg"),
+          require("./header3.jpg"),
         ]
       }
     }
   };
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
-  .home
-    margin:0
-    padding:0
-    width: 100%
-    height:100%
-
+<style>
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+  
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+  
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
 </style>

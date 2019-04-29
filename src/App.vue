@@ -3,15 +3,13 @@
     <el-container>
 
       <!--顶部-->
+      <!--顶部换成了默认配色，更配按钮选择-->
       <el-header>
         <el-menu
           default-active="/"
           class="el-menu-demo"
           mode="horizontal"
           @select="handleSelect"
-          background-color="#999"
-          text-color="#fff"
-          active-text-color="#ffd04b"
           :router="true">
           <el-menu-item index="/">首页</el-menu-item>
           <el-menu-item index="/serve">定制方案</el-menu-item>
@@ -27,7 +25,7 @@
 
       <!--底部内容，这里要改-->
       <el-footer>
-        This is footer
+        到底啦！
       </el-footer>
     </el-container>
   </div>

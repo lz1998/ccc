@@ -2,13 +2,28 @@
   <div class="home">
     <h1>This is home Page</h1>
     <!--动态轮播图-->
-    <el-carousel>
-      <el-carousel-item v-for="item in pics" :key="item">
-        <!--<h3>{{ item }}</h3>-->
-        <img :src="item"/>
-      </el-carousel-item>
     </el-carousel>
+    <el-carousel :interval="4000" type="card" height="330px">
+    <el-carousel-item v-for="item in pics" :key="item">
+      <img :src="item"/>
+    </el-carousel-item>
+  </el-carousel>
 
+     <el-col :span="8">
+    <el-card shadow="hover">
+      产品服务
+    </el-card>
+  </el-col>
+   <el-col :span="8">
+    <el-card shadow="hover">
+      养老贴士
+    </el-card>
+  </el-col>
+   <el-col :span="8">
+    <el-card shadow="hover">
+      关于我们
+    </el-card>
+  </el-col>
     <!--下方3个并列，每行24，各占8，间距20-->
     <el-row :gutter="20">
       <el-col :span="8">
@@ -34,6 +49,8 @@
 
       </el-col>
     </el-row>
+
+
   </div>
 </template>
 
@@ -57,7 +74,7 @@
     color: #475669;
     font-size: 18px;
     opacity: 0.75;
-    line-height: 300px;
+    line-height: 350px;
     margin: 0;
   }
   
